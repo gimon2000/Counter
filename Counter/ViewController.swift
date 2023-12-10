@@ -10,12 +10,16 @@ import UIKit
 class ViewController: UIViewController {
     
     private var count = 0
+    private var increment = 1
     private func getCountText(_ number: Int) -> String {
         "Значение счётчика: \(number)"
     }
 
     @IBOutlet weak var counterLabel: UILabel!
     @IBOutlet weak var increaseCounterButton: UIButton!
+    
+    @IBOutlet weak var piusButton: UIButton!
+    @IBOutlet weak var minusButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,8 +28,19 @@ class ViewController: UIViewController {
     }
 
     @IBAction func clickCounterButton(_ sender: Any) {
-        count += 1
+        if increment == -1, count == 0 {
+            return
+        }
+        count += increment
         counterLabel.text = getCountText(count)
+    }
+    
+    @IBAction func clickPlusButton(_ sender: Any) {
+        increment = 1
+    }
+    
+    @IBAction func clickMinusButton(_ sender: Any) {
+        increment = -1
     }
     
 }
