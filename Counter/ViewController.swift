@@ -62,7 +62,7 @@ class ViewController: UIViewController {
         count = 0
         increment = 1
         counterLabel.text = getCountText(count)
-        history.text += "\(getDate()): значение сброшеноn\n"
+        history.text += "\(getDate()): значение сброшено\n"
     }
     
 }
