@@ -20,6 +20,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var piusButton: UIButton!
     @IBOutlet weak var minusButton: UIButton!
+    @IBOutlet weak var resetButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,6 +42,12 @@ class ViewController: UIViewController {
     
     @IBAction func clickMinusButton(_ sender: Any) {
         increment = -1
+    }
+    
+    @IBAction func clickResetButton(_ sender: Any) {
+        count = 0
+        increment = 1
+        counterLabel.text = getCountText(count)
     }
     
 }
