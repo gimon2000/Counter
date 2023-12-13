@@ -30,24 +30,6 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NQh-Ig-LgT">
-                                <rect key="frame" x="16" y="513" width="361" height="157"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FW1-jE-gdn">
-                                        <rect key="frame" x="112" y="61" width="136" height="35"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="1" green="0.65344642340000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="increase count"/>
-                                        <connections>
-                                            <action selector="clickCounterButton:" destination="BYZ-38-t0r" eventType="touchDown" id="yGe-K5-qzX"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AfH-ke-62g">
                                 <rect key="frame" x="16" y="678" width="361" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -110,11 +92,7 @@
                     </view>
                     <connections>
                         <outlet property="counterLabel" destination="2ey-hA-8fS" id="wXh-r9-U4w"/>
-                        <outlet property="history" destination="UFQ-l7-MVh" id="vfc-yh-7qk"/>
-                        <outlet property="increaseCounterButton" destination="FW1-jE-gdn" id="GVB-rO-ZTM"/>
-                        <outlet property="minusButton" destination="rdq-pe-0DB" id="0dq-7d-lHE"/>
-                        <outlet property="piusButton" destination="T97-Vn-nYh" id="xr9-uq-OwC"/>
-                        <outlet property="resetButton" destination="R42-QN-3g2" id="iRn-o6-4ev"/>
+                        <outlet property="history" destination="UFQ-l7-MVh" id="j8z-gq-l5C"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
